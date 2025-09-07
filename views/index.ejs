@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Todo App</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<h1>Todo List</h1>
+
+
+<% if (alert) { %>
+<p class="alert"><%= alert %></p>
+<% } %>
+
+
+<form action="/tasks" method="POST">
+<input type="text" name="title" placeholder="Enter task">
+<select name="priority">
+<option value="low">Low</option>
+<option value="high">High</option>
+<option value="urgent">Urgent</option>
+</select>
+<button type="submit">Add</button>
+</form>
+
+
+<ul>
+<% tasks.forEach(function(task){ %>
+<li>
+<%= task.title %> (<%= task.priority %>)
+<a href="/tasks/<%= task._id %>/edit">Edit</a>
+<form action="/tasks/<%= task._id %>?_method=DELETE" method="POST" style="display:inline">
+<button type="submit">Delete</button>
+</form>
+</li>
+<% }) %>
+</ul>
+</body>
+</html>
