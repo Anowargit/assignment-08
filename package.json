@@ -15,6 +15,14 @@
     "ejs": "^3.1.10",
     "express": "^5.1.0",
     "method-override": "^3.0.0",
-    "mongoose": "^8.18.0"
-  }
+    "mongoose": "^8.18.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anowargit/assignment-08.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Anowargit/assignment-08/issues"
+  },
+  "homepage": "https://github.com/Anowargit/assignment-08#readme"
 }
