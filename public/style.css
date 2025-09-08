@@ -1,7 +1,31 @@
-body { font-family: Arial; padding:20px; }
-h1 { text-align:center; }
-form { margin:20px auto; text-align:center; }
-input, select, button { margin:5px; padding:5px; }
-ul { list-style:none; padding:0; max-width:400px; margin:0 auto; }
-li { border:1px solid #ccc; padding:6px; margin:5px 0; }
-.alert { background:#eee; padding:6px; text-align:center; }
+body {
+    font-family: Arial;
+    padding:20px;
+    background-color: aqua;
+}
+h1 {
+    text-align:center;
+    color: darkblue;}
+form { 
+    margin:20px auto; 
+    text-align:center;
+}
+input, select, button {
+    margin:10px;
+    padding:10px;
+}
+ul { 
+    list-style:none;
+    padding: 0;
+    max-width:400px;
+    margin:0 auto;
+}
+li {
+    border:10px solid #14b0df;
+    padding:5px;
+    margin:10px 0;
+}
+.alert {
+    padding:6px;
+    text-align:center;
+}
